@@ -4,6 +4,8 @@ import 'package:simobilekotlin/pages/cadastros/documentos.dart';
 import 'package:simobilekotlin/pages/cadastros/enderecos.dart';
 import 'package:simobilekotlin/pages/cadastros/pessoais.dart';
 
+import '../../login.dart';
+
 class DadosPessoais extends StatefulWidget {
   const DadosPessoais({super.key});
 
@@ -26,6 +28,17 @@ class _DadosPessoaisState extends State<DadosPessoais> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dados Pessoais"),
+        actions: [
+          InkWell(
+            onTap: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const Login()));
+            },
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              child: const Icon(Icons.exit_to_app),
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../login.dart';
+
 class Aniversariantes extends StatelessWidget {
   const Aniversariantes({super.key});
 
@@ -17,6 +19,17 @@ class Aniversariantes extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Aniversariantes"),
+        actions: [
+          InkWell(
+            onTap: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const Login()));
+            },
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              child: const Icon(Icons.exit_to_app),
+            ),
+          ),
+        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(20),

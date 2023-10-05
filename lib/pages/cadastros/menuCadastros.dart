@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:simobilekotlin/pages/cadastros/dadosPessoais.dart';
 
+import '../../login.dart';
+
 class MenuCadastros extends StatefulWidget {
   const MenuCadastros({super.key});
 
@@ -14,6 +16,17 @@ class _MenuCadastrosState extends State<MenuCadastros> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Cadastros"),
+        actions: [
+          InkWell(
+            onTap: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const Login()));
+            },
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              child: const Icon(Icons.exit_to_app),
+            ),
+          ),
+        ],
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
