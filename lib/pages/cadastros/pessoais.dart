@@ -69,6 +69,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                color: (_alterando)
+                    ?Colors.white
+                    :Colors.grey.shade300,
                 padding: const EdgeInsets.all(5),
                 child: TextFormField(
                   controller: _nome,
@@ -82,6 +85,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                color: (_alterando)
+                    ?Colors.white
+                    :Colors.grey.shade300,
                 padding: const EdgeInsets.all(5),
                 child: TextFormField(
                   controller: _social,
@@ -99,6 +105,9 @@ class _PessoaisState extends State<Pessoais> {
                 child: IgnorePointer(
                   ignoring: !_alterando,
                   child: Container(
+                    color: (_alterando)
+                        ?Colors.white
+                        :Colors.grey.shade300,
                     padding: const EdgeInsets.all(5),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,6 +149,9 @@ class _PessoaisState extends State<Pessoais> {
                 Card(
                   elevation: 2,
                   child: Container(
+                    color: (_alterando)
+                        ?Colors.white
+                        :Colors.grey.shade300,
                     width: MediaQuery.of(context).size.width * 0.45,
                     padding: const EdgeInsets.all(5),
                     child: TextFormField(
@@ -162,6 +174,9 @@ class _PessoaisState extends State<Pessoais> {
                     child: Card(
                       elevation: 2,
                       child: Container(
+                          color: (_alterando)
+                              ?Colors.white
+                              :Colors.grey.shade300,
                           height: MediaQuery.of(context).size.height * 0.1,
                           width: MediaQuery.of(context).size.width * 0.4,
                           padding: const EdgeInsets.all(5),
@@ -188,6 +203,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                color: (_alterando)
+                    ?Colors.white
+                    :Colors.grey.shade300,
                 padding: const EdgeInsets.all(5),
                 child: TextFormField(
                   controller: _nis,
@@ -201,6 +219,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                  color: (_alterando)
+                      ?Colors.white
+                      :Colors.grey.shade300,
                 width: MediaQuery.of(context).size.width,
                 padding: const EdgeInsets.all(5),
                 child: IgnorePointer(
@@ -232,6 +253,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                color: (_alterando)
+                    ?Colors.white
+                    :Colors.grey.shade300,
                 padding: const EdgeInsets.all(5),
                 child: TextFormField(
                   controller: _pai,
@@ -245,6 +269,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                color: (_alterando)
+                    ?Colors.white
+                    :Colors.grey.shade300,
                 padding: const EdgeInsets.all(5),
                 child: TextFormField(
                   controller: _mae,
@@ -258,6 +285,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                  color: (_alterando)
+                      ?Colors.white
+                      :Colors.grey.shade300,
                   width: MediaQuery.of(context).size.width,
                   padding: const EdgeInsets.all(5),
                   child: IgnorePointer(
@@ -289,6 +319,9 @@ class _PessoaisState extends State<Pessoais> {
             Card(
               elevation: 2,
               child: Container(
+                  color: (_alterando)
+                      ?Colors.white
+                      :Colors.grey.shade300,
                   width: MediaQuery.of(context).size.width,
                   padding: const EdgeInsets.all(5),
                   child: IgnorePointer(

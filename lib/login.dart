@@ -18,6 +18,7 @@ class _LoginState extends State<Login> {
     super.initState();
   }
   _meuInit() async{
+
     final bool canAuthenticateWithBiometrics = await auth.canCheckBiometrics;
     final bool canAuthenticate =  canAuthenticateWithBiometrics || await auth.isDeviceSupported();
     if(canAuthenticate){
