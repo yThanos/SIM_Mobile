@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class Pessoais extends StatefulWidget {
   const Pessoais({super.key});
@@ -155,6 +156,11 @@ class _PessoaisState extends State<Pessoais> {
                     width: MediaQuery.of(context).size.width * 0.45,
                     padding: const EdgeInsets.all(5),
                     child: TextFormField(
+                      inputFormatters: [MaskTextInputFormatter(
+                          mask: '###.###.###-##',
+                          filter: {"#": RegExp(r'[0-9]')},
+                          type: MaskAutoCompletionType.lazy
+                      )],
                       controller: _cpf,
                       readOnly: !_alterando,
                       decoration: const InputDecoration(
@@ -208,6 +214,11 @@ class _PessoaisState extends State<Pessoais> {
                     :Colors.grey.shade300,
                 padding: const EdgeInsets.all(5),
                 child: TextFormField(
+                  inputFormatters: [MaskTextInputFormatter(
+                      mask: '###.#####.##-#',
+                      filter: {"#": RegExp(r'[0-9]')},
+                      type: MaskAutoCompletionType.lazy
+                  )],
                   controller: _nis,
                   readOnly: !_alterando,
                   decoration: const InputDecoration(
